@@ -94,6 +94,8 @@ header {
   border: 2px solid var(--border-primary);
   margin-right: 10px;
   height: 46px;
+  font-family: var(--title-title);
+  text-indent: 10px; 
 }
 
 .input-add:hover {
