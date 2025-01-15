@@ -207,3 +207,8 @@ input[type="checkbox"]:checked::after {
 input:hover {
   background-color: var(--border-primary);
 }
+
+.alert {
+  bor;
+  border-color: #A52C6B;
+}
