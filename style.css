@@ -111,7 +111,7 @@ header {
   border: 2px solid var(--color-brand);
 }
 
-button {
+.button-add {
   width: 160px;
   height: 46px;
   gap: 10px; 
@@ -122,8 +122,18 @@ button {
   border: none;
 }
 
-button:hover {
+.button-add:hover {
   background-color: var(--color-brand-hover);  
+}
+
+.button-delete {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.button-delete:hover {
+  color: var(--color-danger);
 }
 
 .list {

@@ -1,10 +1,17 @@
 function addItem() {
-  const inputItem = document.getElementById('item-name');
+  const inputItem = document.querySelector('#item-name');
   const itemList = inputItem.value;
+  const itemId = `item-${Date.now()}`;
   
-  const newItemList = `<div class="item-list"><div class="item-description"><input type="checkbox" name="list" class="morning"><label for="">${itemList}</label><div><a href="" class="delete"><i class="ph ph-trash"></i></a></div>`;
+  const newItemList = `<div class="item-list" id="${itemId}"><div class="item-description"><input type="checkbox" name="list" class="morning"><label for="">${itemList}</label></div><button onclick="deleteItem('${itemId}')" class="button-delete"><i class="ph ph-trash"></i></button></div>`;
 
-  const list = document.getElementById('shop-list');
+  const list = document.querySelector('#shop-list');
   list.innerHTML += newItemList;
-  console.log(list)
+
+  inputItem.value = ""
+}
+
+
+function deleteItem(itemId) {
+  document.querySelector(`#${itemId}`).remove();
 }
